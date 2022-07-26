@@ -142,7 +142,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //-------------------------------------------------//-----------------------------------------------------------//
     KC_LCTL, KC_Z, KC_X, KC_C, KC_V, KC_B,                  KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH,  KC_BSLS,
 //-------------------------------------------------//-----------------------------------------------------------//
-                        KC_LCTL, KC_SPC, MO(1),		     MO(2),  KC_ENT, KC_RGUI,
+                        KC_LCTL, KC_SPC, MO(1),		     MO(2),  KC_ENT, KC_LGUI,
                                  KC_HOME,  KC_BSPC,      KC_DEL, KC_RALT
   ),
 
@@ -162,7 +162,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [RAISE_LAYER_2] = LAYOUT_split_4x6_5(
     KC_F12,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,			    KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,   KC_F11,
 //---------------------------------------------------------//--------------------------------------------------------------//
-/*CURLYBRACK*/, _______, RGB_RMOD, RGB_TOG, RGB_MOD, KC_LBRC,			  KC_RBRC, _______, KC_NLCK, KC_INS,  KC_SLCK,  KC_MUTE,
+_______/*CURLYBRACK*/, _______, RGB_RMOD, RGB_TOG, RGB_MOD, KC_LBRC,			  KC_RBRC, _______, KC_NLCK, KC_INS,  KC_SLCK,  KC_MUTE,
 //---------------------------------------------------------//--------------------------------------------------------------//
     _______, KC_LEFT, KC_UP,    KC_DOWN, KC_RGHT, KC_LPRN,	      KC_RPRN, KC_MPRV, KC_MPLY, KC_MNXT, _______,  KC_VOLU,
 //---------------------------------------------------------//--------------------------------------------------------------//
