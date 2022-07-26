@@ -31,6 +31,18 @@
  *                 ╰────────────╯ ╰────────────╯
  */
 // clang-format off
+#ifdef POINTING_DEVICE_ENABLE
+//#    ifndef CHARYBDIS_MINIMUM_DEFAULT_DPI
+//#        define CHARYBDIS_MINIMUM_DEFAULT_DPI 6000
+//#    endif
+//void keyboard_post_init_user(void){
+//    pointing_device_set_cpi(CHARYBDIS_MINIMUM_DEFAULT_DPI);
+//}
+
+
+
+#endif
+
 #ifdef RGB_MATRIX_ENABLE
 led_config_t g_led_config = { {
     /* Key Matrix to LED index. */

@@ -17,23 +17,118 @@
 
 #pragma once
 #include "config_common.h"
+#define VENDOR_ID 0xA8F8
+#define PRODUCT_ID 0x1830
+#define DEVICE_VER 0x0001
+#define MANUFACTURER Bastard Keyboards
+#define PRODUCT Skeletyl
+
+#define ONESHOT_TIMEOUT 5000
+#define TAPPING_TERM 250
+#define IGNORE_MOD_TAP_INTERRUPT
+
+// Enable use of pointing device on slave split.
+#define SPLIT_POINTING_ENABLE
+
+// Pointing device is on the right split.
+#define POINTING_DEVICE_RIGHT
+
+// Limits the frequency that the sensor is polled for motion.
+#define POINTING_DEVICE_TASK_THROTTLE_MS 1
+
+/** \brief Invert X axis on mouse reports. */
+#define POINTING_DEVICE_INVERT_X
+
+
 
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 5
 #define RGBLIGHT_LIMIT_VAL 180
+
 #define MATRIX_ROW_PINS { B5, F7, F6, B6 }
 #define MATRIX_COL_PINS { E6, C6, B1, B3, B2 }
 
-#define DIODE_DIRECTION ROW2COL
 
-#define RGB_DI_PIN D2
-#define RGBLED_NUM 36
-#define RGBLED_SPLIT { 18, 18 }
-#define RGBLIGHT_ANIMATIONS
+#define MATRIX_ROW_PINS_RIGHT { F0, C6, D4, B5 }
+#define MATRIX_COL_PINS_RIGHT { C7, B7, D7, E6, B4 }
+
+
+#define DIODE_DIRECTION COL2ROW
+
+//#define RGB_DI_PIN D2
+//#define RGBLED_NUM 36kkkjklll;;;yuioopppphhjjkkll;;//..,,m
+//#define RGBLED_SPLIT { 18, 18 }
+//#define RGBLIGHT_ANIMATIONS
 
 #define DEBOUNCE 5
 
 #define SOFT_SERIAL_PIN D0
+
+/* PMW3360 settings. */
+#define ADNS9800_CS_PIN B0
+
+// Trackball angle adjustment.
+//#define ROTATIONAL_TRANSFORM_ANGLE 45
+
+#define POINTING_DEVICE_ROTATION_270 true
+
+#define SCROLL_DIVIDER 50
+
+#define COMBO_COUNT 7
+
+
+//Space Saving
+#undef LOCKING_SUPPORT_ENABLE
+#undef LOCKING_RESYNC_ENABLE
+#define NO_MUSIC_MODE
+
+
+/*
+
+ Mouse scroll config.
+
+#ifndef MOUSEKEY_WHEEL_DELAY
+#    define MOUSEKEY_WHEEL_DELAY 15
+#endif  // !MOUSEKEY_WHEEL_DELAY
+
+#ifndef MOUSEKEY_WHEEL_DELTA
+#    define MOUSEKEY_WHEEL_DELTA 1
+#endif  // !MOUSEKEY_WHEEL_DELTA
+
+#ifndef MOUSEKEY_WHEEL_INTERVAL
+#    define MOUSEKEY_WHEEL_INTERVAL 50
+#endif  // !MOUSEKEY_WHEEL_INTERVAL
+
+#ifndef MOUSEKEY_WHEEL_MAX_SPEED
+#    define MOUSEKEY_WHEEL_MAX_SPEED 8
+#endif  // !MOUSEKEY_WHEEL_MAX_SPEED
+
+#ifndef MOUSEKEY_WHEEL_TIME_TO_MAX
+#    define MOUSEKEY_WHEEL_TIME_TO_MAX 80
+#endif  // !MOUSEKEY_WHEEL_TIME_TO_MAX
+
+#ifndef MOUSEKEY_WHEEL_INITIAL_MOVEMENTS
+#    define MOUSEKEY_WHEEL_INITIAL_MOVEMENTS 8
+#endif  // !MOUSEKEY_WHEEL_INITIAL_MOVEMENTS
+
+#ifndef MOUSEKEY_WHEEL_BASE_MOVEMENTS
+#    define MOUSEKEY_WHEEL_BASE_MOVEMENTS 48
+#endif  // !MOUSEKEY_WHEEL_BASE_MOVEMENTS
+
+#ifndef MOUSEKEY_WHEEL_ACCELERATED_MOVEMENTS
+#    define MOUSEKEY_WHEEL_ACCELERATED_MOVEMENTS 48
+#endif  // !MOUSEKEY_WHEEL_ACCELERATED_MOVEMENTS
+
+#ifndef MOUSEKEY_WHEEL_DECELERATED_MOVEMENTS
+#    define MOUSEKEY_WHEEL_DECELERATED_MOVEMENTS 8
+#endif  // !MOUSEKEY_WHEEL_DECELERATED_MOVEMENTS
+
+
+
+*/
+
+
+
 
 #define MASTER_RIGHT
 

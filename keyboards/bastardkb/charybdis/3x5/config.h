@@ -53,7 +53,7 @@
 #define BOOTMAGIC_LITE_COLUMN_RIGHT 0
 
 /* serial.c configuration (for split keyboard) */
-#define SOFT_SERIAL_PIN D2
+#define SOFT_SERIAL_PIN D0
 
 /* Set 0 if debouncing isn't needed. */
 #define DEBOUNCE 5
@@ -66,9 +66,9 @@
 
 /* RGB settings. */
 
-#define RGB_DI_PIN D3
-#define RGBLED_NUM 35
-#define RGBLED_SPLIT \
+//#define RGB_DI_PIN D3
+//#define RGBLED_NUM 35
+//#define RGBLED_SPLIT \
     { 18, 17 }
 
 /* RGB matrix support. */
